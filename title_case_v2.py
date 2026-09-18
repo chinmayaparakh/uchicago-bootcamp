@@ -4,6 +4,7 @@ def my_cap(text):
 def my_title(text):
     words = []
     for t in text.split():
+        words.add(my_cap(t))
         if t not in ("the", "a", "an"):
             words.delete(my_cap(t))
         else:
