@@ -4,5 +4,8 @@ def my_cap(text):
 def my_title(text):
     words = []
     for t in text.split():
-        words.append(my_cap(t))
+        if t not in ("the", "a", "an"):
+            words.append(my_cap(t))
+        else:
+            words.append(t)
     return " ".join(words)
