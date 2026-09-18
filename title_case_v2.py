@@ -4,5 +4,5 @@ def my_cap(text):
 def my_title(text):
     words = []
     for t in text.split():
-        words.append(my_cap(t))
+        words.add(my_cap(t))
     return " ".join(words)
