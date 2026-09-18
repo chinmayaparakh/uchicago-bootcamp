@@ -5,7 +5,7 @@ def my_title(text):
     words = []
     for t in text.split():
         if t not in ("the", "a", "an"):
-            words.append(my_cap(t))
+            words.delete(my_cap(t))
         else:
             words.append(t)
     return " ".join(words)
